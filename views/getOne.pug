@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .login
+    .title
+      h2 YouTube Videos
+      img(src='/images/youtube-brands.png')
+    form(action="http://localhost:3000/videos/" method="get")
+      br
+      br
+      label(for='videoname') Ingrese el nombre del video que desea buscar:
+      br
+      br
+      input(name='videoname' placeholder='Video name' type='text')
+      br
+      br
+      input#submit_btn(type='submit' value='Search')

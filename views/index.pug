@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .login
+    .title
+      h2 YouTube Videos
+      img(src='/images/youtube-brands.png')
+    #options
+      br
+      br
+      form(action="http://localhost:3000/post/")
+        input#submit_btn(type='submit' value='Register video')
+      br
+      br
+      form(action="http://localhost:3000/getOne/")
+        input#submit_btn(type='submit' value='Search one video')
+      br
+      br
+      form(action="http://localhost:3000/videos/" method="get")
+        input#submit_btn(type='submit' value='Search all videos')
+      br
+      br
+      form(action="http://localhost:3000/update/")
+        input#submit_btn(type='submit' value='Update video info')
+      br
+      br
+      form(action="http://localhost:3000/delete/")
+        input#submit_btn(type='submit' value='Delete video')

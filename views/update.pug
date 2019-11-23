@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  .login
+    .title
+      h2 YouTube Videos
+      img(src='/images/youtube-brands.png')
+    form(action="http://localhost:3000/videos/" method="update")
+      br
+      br
+      label(for='videoname') Ingrese los datos que desea actualizar:
+      br
+      br
+      input(name='videoname' placeholder='Video name' type='text')
+      input(name='owner' placeholder='Owner' type='text')
+      input(name='duration' placeholder='Duration' type='text')
+      input(name='views' placeholder='Views' type='text')
+      input(name='likes' placeholder='Likes' type='text')
+      input(name='dislikes' placeholder='Dislikes' type='text')
+      br
+      br
+      input#submit_btn(type='submit' value='Update')

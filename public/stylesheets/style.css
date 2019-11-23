@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #282828;
+  color: #5a5a5a;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  color: #5a5a5a;
+  font-family: 'Sofia', cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-size: 3.6em;
+  text-align: center;
+  margin: 0 0.4em 0 0.4em;
+}
+
+a {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+
+.login {
+  width: 450px;
+  top: 10%;
+  left: 50%;
+  margin: 7em 0;
+}
+
+.login img {
+  width: 120px;
+  height: 100px;
+  margin: 2em 2em 2em 0;
+}
+
+input[type="text"]{
+  width: 450px;
+  padding: 20px 0px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #5a5a5a;
+  outline: none;
+  color: #6D7781;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  background: #ff0000;
+  border: 0;
+  width: 450px;
+  height: 40px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #ff4040;
+}
+
+::-webkit-input-placeholder {
+  color: #5a5a5a;
+  font-size: 13px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  box-shadow: 0px 0px 0px 1000px #282828;
+  -webkit-text-fill-color: #5a5a5a;
+  -webkit-box-shadow: 0px 0px 0px 1000px #282828 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
